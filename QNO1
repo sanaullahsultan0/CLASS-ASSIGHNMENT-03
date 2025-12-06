@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int marks,attendence,familyincome;
+    cout<<"enter your marks out of 100: "<<endl;
+    cin>>marks;
+    cout<<"enter your attendence out of 100%:"<<endl;
+    cin>>attendence;
+    cout<<"enter your family income :"<<endl;
+    cin>>familyincome;
+    if(marks>=85||attendence>=80){
+        cout<<"full scholership"<<endl;
+    }else if(marks>=70){
+        cout<<"partial scholership"<<endl;
+    }else{
+        cout<<"no scholership"<<endl;
+    }
+    
+    
+    return 0;
+}
