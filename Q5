@@ -1,0 +1,28 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string username, password;
+    int attempts = 0;
+
+    while(attempts < 3) {
+        cout << "Enter Username: ";
+        cin >> username;
+        cout << "Enter Password: ";
+        cin >> password;
+
+        if(username == "sultan" && password == "1142") {
+            cout << "ACHAAA OK!" << endl;
+            return 0; // PASSWORD CORECT HONE PE KHATAM.
+        } else {
+            cout << "Incorrect Username or Password!" << endl;
+        }
+
+        attempts++;
+    }
+
+    cout << "TUJE SE NA HOPAYEGAAA!" << endl;
+
+    return 0;
+}
