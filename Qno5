@@ -1,0 +1,43 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int seatChoice;
+    float distance, totalFare;
+
+    cout << "Seat Types:\n";
+    cout << "1. Economy (Rs. 5 per km)\n";
+    cout << "2. Business (Rs. 8 per km)\n";
+    cout << "3. First Class (Rs. 12 per km)\n\n";
+
+    cout << "Enter your seat choice (1-3): ";
+    cin >> seatChoice;
+
+    cout << "Enter distance in km: ";
+    cin >> distance;
+
+    switch(seatChoice) {
+        case 1:
+            totalFare = distance * 5;
+            cout << "Economy Seat Selected.\n";
+            cout << "Total Fare: Rs. " << totalFare;
+            break;
+
+        case 2:
+            totalFare = distance * 8;
+            cout << "Business Seat Selected.\n";
+            cout << "Total Fare: Rs. " << totalFare;
+            break;
+
+        case 3:
+            totalFare = distance * 12;
+            cout << "First Class Seat Selected.\n";
+            cout << "Total Fare: Rs. " << totalFare;
+            break;
+
+        default:
+            cout << "Invalid seat choice!";
+    }
+
+    return 0;
+}
